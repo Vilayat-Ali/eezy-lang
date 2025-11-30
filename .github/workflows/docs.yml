@@ -27,17 +27,18 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-          cache-dependency-path: './docs/package-lock.json'  # Specify the path to your lock file
+          cache-dependency-path: 'docs/package-lock.json'  # Fixed path
 
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        working-directory: ./docs  # Change to docs directory
+        working-directory: ./docs
         run: npm ci
 
-      - name: Build Astro site
-        working-directory: ./docs  # Change to docs directory
+      - name: Build Docs site
+        working-directory: ./docs
         run: |
           npm run build \
             --site "${{ steps.pages.outputs.origin }}" \
@@ -46,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/dist  # Path to built site from docs directory
+          path: docs/dist
 
   deploy:
     environment:
