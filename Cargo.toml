@@ -1,0 +1,18 @@
+[package]
+name = "eezypeezy"
+description = "A compiled programming language that targets JVM"
+version = "0.1.0"
+edition = "2024"
+
+[package.metadata.clippy]
+allowed = ["unused_variables"]
+deny = ["todo"]
+warn = ["unused_imports"]
+
+[package.metadata.clippy.complexity]
+single_char_pattern = false
+
+[dependencies]
+clap = { version = "4.5.53", features = ["derive"] }
+rayon = "1.11.0"
+thiserror = "2.0.17"

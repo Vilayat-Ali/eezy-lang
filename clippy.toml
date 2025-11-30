@@ -1,0 +1,33 @@
+# Allow these in development
+allowed = [
+    "todo",                    # Allow TODOs during development
+    "missing_docs",           # Allow missing docs temporarily
+    "module_name_repetitions" # Allow repeated module names
+]
+
+# Strict rules we want to enforce
+deny = [
+    "unwrap_used",            # No unwrap() calls
+    "expect_used",            # No expect() without proper context
+    "panic",                  # No direct panics
+    "unreachable",            # No unreachable code
+]
+
+# Performance-related strict rules
+deny = [
+    "inefficient_to_string",  # Avoid inefficient to_string()
+    "redundant_clone",        # Avoid unnecessary clones
+    "large_types_passed_by_value",
+]
+
+[complexity]
+type_complexity = { threshold = 25 }  # Limit type complexity
+too_many_arguments = { max_args = 6 } # Limit function arguments
+
+[perf]
+large_enum_variant = { threshold = 128 } # Allow larger enum variants for AST
+trivial_copy = false                     # Don't warn about trivial copies
+
+[style]
+too_many_lines = { max_lines = 200 }    # Increase max function lines
+minimal_struct_size = 50                # Increase minimal struct size warning
