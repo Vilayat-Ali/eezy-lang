@@ -2,6 +2,13 @@
 
 A modern programming language that compiles to Java bytecode, built with the power and safety of Rust. ⚡
 
+## 📊 Repository Stats
+
+![GitHub stars](https://img.shields.io/github/stars/vilayat-ali/eezy-lang?style=social)
+![GitHub forks](https://img.shields.io/github/forks/vilayat-ali/eezy-lang?style=social)
+![GitHub issues](https://img.shields.io/github/issues/vilayat-ali/eezy-lang)
+![GitHub PRs](https://img.shields.io/github/issues-pr/vilayat-ali/eezy-lang)
+
 ## 📖 Overview
 
 Eezy is a new programming language designed to target the Java Virtual Machine (JVM). Written entirely in Rust 🦀, Eezy compiles source code to Java bytecode, allowing your programs to run seamlessly on any JVM while leveraging Rust's performance and safety features for the compiler itself.
@@ -80,13 +87,6 @@ This project is licensed under the [MIT License](LICENSE). 📜
 - [ ] 📖 Write comprehensive documentation
 - [ ] 🎉 Release first stable version
 - [ ] 🔧 IDE support and language server
-
-## 📊 Repository Stats
-
-![GitHub stars](https://img.shields.io/github/stars/vilayat-ali/eezy?style=social)
-![GitHub forks](https://img.shields.io/github/forks/vilayat-ali/eezy?style=social)
-![GitHub issues](https://img.shields.io/github/issues/vilayat-ali/eezy)
-![GitHub PRs](https://img.shields.io/github/issues-pr/vilayat-ali/eezy)
 
 ## 📞 Contact
 
