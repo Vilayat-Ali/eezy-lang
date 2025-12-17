@@ -1,0 +1,4 @@
+@import std
+
+pub func main():
+    std.println("Hello world!")

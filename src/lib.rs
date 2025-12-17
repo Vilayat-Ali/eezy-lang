@@ -1,3 +1,4 @@
+pub mod ast;
 pub mod cli;
 pub mod errors;
 pub mod input_validation;
