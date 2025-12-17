@@ -1,0 +1,12 @@
+@import std
+
+func fibonacci(num int) -> int:
+    if num == 0 || num == 1:
+        return 1
+    else:
+        return num * fibonacci(num - 1)
+
+func main():
+    num = std.input("Enter a number:\n")
+    fibonacci_num = fibonacci_num(num)
+    std.printf("Fibonnaci of number %d is %d", num, fibonacci_num)
