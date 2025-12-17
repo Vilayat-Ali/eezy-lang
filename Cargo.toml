@@ -14,5 +14,6 @@ single_char_pattern = false
 
 [dependencies]
 clap = { version = "4.5.53", features = ["derive"] }
+colored = "3.0.0"
 rayon = "1.11.0"
 thiserror = "2.0.17"

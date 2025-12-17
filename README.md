@@ -1,6 +1,27 @@
-# Eezy 🚀
+<div align="center">
 
-A modern programming language that compiles to Java bytecode, built with the power and safety of Rust. ⚡
+# <img src="./assets/logo.png" width="100" height="100" alt="Eezy Logo" />
+
+# Eezy Programming Language
+
+> **The Easy-to-Learn, Easy-to-Use, Easy-to-Love Language**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-0.1.0-orange)](https://crates.io/crates/eezy)
+[![Rust](https://img.shields.io/badge/built_with-Rust-red.svg)](https://www.rust-lang.org/)
+[![CI](https://github.com/vilayat-ali/eezy-lang/actions/workflows/ci.yml/badge.svg)](https://github.com/vilayat-ali/eezy-lang/actions)
+
+*A modern, expressive programming language designed for clarity and productivity*
+
+[Features](#features) •
+[Quick Start](#quick-start) •
+[Documentation](#documentation) •
+[Examples](#examples) •
+[Contributing](#contributing)
+
+</div>
+
+---
 
 ## 📊 Repository Stats
 
