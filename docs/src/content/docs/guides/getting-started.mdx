@@ -1,0 +1,185 @@
+---
+title: Getting Started
+description: An introduction to the Eezy programming language, its goals, and the technology behind it.
+---
+
+import {Tabs, TabItem, Steps} from "@astrojs/starlight/components";
+
+## Introduction
+
+Eezy is a programming language designed to make **object-oriented programming concepts approachable**
+while targeting the **Java Virtual Machine (JVM)** for practical execution.
+
+The language is implemented in **Rust** and compiles source code into **Java bytecode**, allowing
+programs written in Eezy to run on any standard JVM.
+
+This page provides a brief overview of the project’s goals, technical foundations,
+and recommended learning resources.
+
+---
+
+## Project Goals
+
+Eezy is developed with a strong emphasis on **clarity and learning**.
+
+The primary objectives of the project are:
+
+- To present object-oriented programming concepts in a clear and structured manner
+- To reduce unnecessary syntactic complexity without obscuring core ideas
+- To expose learners to the fundamentals of programming language implementation
+- To leverage the JVM as a stable and widely adopted execution platform
+- To use Rust for building a reliable and maintainable compiler
+
+Eezy is intended for students, educators, and developers who are interested in
+both learning programming and understanding how programming languages are built.
+
+---
+
+## Quick Start
+
+<Tabs>
+  <TabItem label="Linux">
+<Steps>
+<ol>
+  <li>
+    <p>
+      Download the eezy-compiler toolchain from the latest releases:
+      <a href="https://github.com/vilayat-ali/eezy-lang/releases" target="_blank" rel="noopener noreferrer">
+        GitHub Releases
+      </a>
+    </p>
+  </li>
+
+  <li>
+    <p>Install the eezy compiler on your system:</p>
+
+    ```bash
+    tar -xvzf ./ezc-VERSION.tarz
+    mv eezy /etc/usr/eezy
+    export ezc="/etc/usr/eezy/bin"
+    ```
+  </li>
+
+  <li>
+    <p>Write a simple <code>hello.ez</code> program:</p>
+
+    **NOTE**: Eezy-lang is in active development and syntax is subjected to change as per design decisions of the author*
+
+    ```md
+    @import std
+
+    pub func main():
+      std.out("Hello World")
+    ```
+  </li>
+
+  <li>
+    <p>Run the program:</p>
+
+    ```bash
+    ezc run hello.ez
+    ```
+  </li>
+
+  <li>
+    <p>
+      <em>Optional:</em> Build a Java class file artifact:
+    </p>
+
+    ```bash
+    ezc build hello.ez
+    ```
+
+    <p>
+      This will generate a <code>hello.class</code> file that can be executed on the JVM.
+    </p>
+  </li>
+</ol>
+</Steps>
+
+  </TabItem>
+  <TabItem label="Windows"></TabItem>
+</Tabs>
+
+---
+
+## Technology Overview
+
+Eezy combines a modern compiler implementation with a well-established runtime.
+
+### Compiler
+
+- Implemented in **Rust**
+- Focuses on safety, performance, and clear internal structure
+- Designed to support incremental development of language features
+
+### Runtime Target
+
+- Targets the **Java Virtual Machine (JVM)**
+- Compiles Eezy source code to **Java bytecode**
+- Enables cross-platform execution without a custom runtime
+
+### Documentation
+
+- Built using **Astro**
+- Uses the **Starlight** documentation framework
+- Authored in Markdown and MDX
+
+---
+
+## Prerequisites
+
+To work with Eezy, the following tools are required:
+
+- A recent **Rust toolchain** for building the compiler
+- A **Java Runtime Environment (JRE)** to execute compiled programs
+- A **Java Development Kit (JDK)** for JVM tooling and inspection
+
+You can verify your setup with:
+
+```bash
+rustc --version
+java --version
+javac --version
+```
+---
+
+## Further Reading
+
+Understanding Eezy benefits from familiarity with Java, the JVM, and compiler design.
+The following resources are recommended:
+
+### Java and the JVM
+
+* Oracle Java Tutorials
+  [https://docs.oracle.com/javase/tutorial/](https://docs.oracle.com/javase/tutorial/)
+
+* JVM Architecture Overview
+  [https://www.geeksforgeeks.org/jvm-works-jvm-architecture/](https://www.geeksforgeeks.org/jvm-works-jvm-architecture/)
+
+* JVM Internals (Baeldung)
+  [https://www.baeldung.com/jvm](https://www.baeldung.com/jvm)
+
+### Compiler Design
+
+* **Crafting Interpreters / Crafting Compilers**
+  [https://craftinginterpreters.com/](https://craftinginterpreters.com/)
+
+  This resource provides a clear and methodical introduction to language implementation
+  and strongly aligns with Eezy’s educational philosophy.
+
+* Stanford CS143: Compilers
+  [https://web.stanford.edu/class/cs143/](https://web.stanford.edu/class/cs143/)
+
+---
+
+## Next Steps
+
+After reviewing this introduction, you may proceed to:
+
+* The language overview and syntax reference
+* Compiler architecture and implementation details
+* Examples and experiments using the Eezy compiler
+
+Please note that Eezy is under active development, and aspects of the language
+and tooling may evolve over time.
