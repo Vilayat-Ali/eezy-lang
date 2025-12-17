@@ -1,5 +1,5 @@
 [package]
-name = "eezypeezy"
+name = "ezc"
 description = "A compiled programming language that targets JVM"
 version = "0.1.0"
 edition = "2024"
